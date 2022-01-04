@@ -1,4 +1,11 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<input type="text" [(ngModel)]="numberValue" />
+<button (click)="WorkerCalPrime(numberValue)">Calculate Prime</button>
+<br />
+<br />
+
+Prime Number {{ numberValue }}
+<br>
+Calculated Prime Number : {{result}}
+<br>
+
